@@ -13,7 +13,7 @@
 - Translation : Added the possibility of a translation (for the moment FR / EN (Google translate), you can easly add your).
 - Menu : Main menu image can be changed in Config.lua
 
--- ** Put in qr-core/client/functions **
+-- Put in qr-core/client/functions 
 
 exports('SpawnVehicle', function(model, cb, coords, isnetworked)
     local hash = GetHashKey(model)
@@ -40,11 +40,10 @@ end)
 exports('GetPlate',function(vehicle)
     if vehicle == 0 then return end
     return QRCore.Shared.Trim(Citizen.InvokeNative(0xE8522D58,vehicle))
-- end)
+end)
 
-```
 
-**Requirement :** 
+# Requirement :
 - oxmysql
 - qr-core
 - qr-menu
